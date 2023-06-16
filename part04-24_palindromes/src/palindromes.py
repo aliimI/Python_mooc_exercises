@@ -1,4 +1,13 @@
-# Write your solution here
-# Note, that at this time the main program should not be written inside
-# if __name__ == "__main__":
-# block!
+def palindromes(str):
+    return str == str[::-1]
+
+def main():
+    while True:
+        stringa = input("Type in a word: ")
+        if palindromes(stringa):
+            print(f"{stringa} is a palindrome!")
+            break
+        else:
+            print("that wasn't a palindrome")
+
+main()
