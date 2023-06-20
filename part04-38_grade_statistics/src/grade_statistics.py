@@ -1,9 +1,11 @@
+# splits the input into two integers: the exam points and the exercises completed.
 def exam_and_exercise_completed(inpt):
     space = inpt.find(" ")
     exam = int(inpt[:space])
     exercise = int(inpt[space+1:])
     return [exam, exercise]
  
+# calculates the exercise points based on the number of exercises completed
 def exercise_points(amount):
     return amount // 10
  
